@@ -1,0 +1,14 @@
+.header-section {
+  min-height: 60px;
+  background-color: #1686b0;
+  padding: 10px;
+}
+
+.body-section {
+  padding: 10px;
+  color: #fff;
+}
+
+.margin-btm-10 {
+  margin-bottom: 10px;
+}

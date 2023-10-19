@@ -1,0 +1,30 @@
+.params-array {
+  list-style: none;
+}
+
+.indicator-header {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.indicator-subheader {
+  color: #fff;
+  font-size: 14px;
+}
+
+.indicator-variable-section {
+  background-color: #fff;
+  min-height: 60px;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.left {
+  color: black;
+  display: inline-block;
+}
+
+.right {
+  float: right;
+}

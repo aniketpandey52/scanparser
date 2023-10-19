@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Scans from "./components/scans";
+import Criteria from "./components/criteria";
+import Form from "./components/form";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/top_gainers.html" element={<Criteria />} />
+      <Route path="/intraday_buying.html" element={<Criteria />} />
+      <Route path="/open_high.html" element={<Criteria />} />
+      <Route path="/cci_reversal.html" element={<Criteria />} />
+      <Route path="/rsi_overbought.html" element={<Criteria />} />
+      <Route path="/open_high_params.html" element={<Form />} />
+      <Route path="/cci_period_params.html" element={<Form />} />
+      <Route path="/cci_array_params.html" element={<Form />} />
+      <Route path="/rsi_params_one.html" element={<Form />} />
+      <Route path="/rsi_params_two.html" element={<Form />} />
+      <Route path="/rsi_params_three.html" element={<Form />} />
+      <Route path="/rsi_period_params.html" element={<Form />} />
+      <Route path="/" element={<Scans />} />
+    </Routes>
   );
 }
 
